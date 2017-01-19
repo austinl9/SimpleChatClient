@@ -97,6 +97,9 @@ public class SimpleChatClientImproved {
 		}
 	}
 
+	//create a thread task that handles reading the messages
+	// from the server
+	// this will constantly read from the server
 	public class IncomingReader implements Runnable {
 		public void run() {
 			String message;
